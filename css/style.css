@@ -1,0 +1,157 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Hanken';
+  src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format('truetype');
+}
+body{
+  font-family: 'Hanken';
+  font-size: 18px;
+  background-color: hsl(0, 0%, 100%);
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 80%; */
+  margin: 20vh auto;
+}
+.box1{
+  width: 200px;
+  border-radius: 20px;
+  padding: 10px;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  margin-left: .5rem;
+}
+
+.box1>p{
+  font-size: 12px;
+  padding-top: 1rem;
+}
+.box1 .score{
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  width: 100px;
+  height: 100px;
+  margin: 1rem auto;
+  border-radius: 50%;
+  padding-top: 1rem;
+}
+.box1 .score>p{
+  font-size: 10px;
+  color: hsla(241, 100%, 89%, 0.659);
+}
+.box1 h3{
+  font-size: 17px;
+}
+
+.box1 .box1-text p{
+  font-size: 10px;
+  width: 80%;
+  margin: .5rem auto 1rem;
+  color: hsla(241, 100%, 89%, 0.932);
+}
+/* BOX 2 */
+.box2{
+  width: 220px;
+  border-radius: 0 10px 10px 0;
+  padding: 10px 20px;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 5px 5px 20px hsla(234, 85%, 45%, 0.098);
+  position: relative;
+  right: 10px;
+  z-index: -1;
+}
+.box2 h3{
+  font-size: smaller;
+  color: hsl(224, 30%, 27%);
+}
+.box2 .reaction,
+.box2 .memory,
+.box2 .verbal,
+.box2 .visual{
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.043);
+  padding: 8px 5px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: .8rem 0;
+}
+.box2 .reaction img,
+.box2 .memory img,
+.box2 .verbal img,
+.box2 .visual img{
+  padding: 0 5px 0 0;
+  width: 20px;
+}
+.left{
+  display: flex;
+  align-items: center;
+}
+.reaction{
+  background-color: hsla(0, 100%, 67%, 0.108);
+color: hsla(0, 100%, 67%);
+}
+.memory{
+  background-color: hsla(39, 100%, 56%, 0.108);
+color: hsla(39, 100%, 56%);
+}
+.verbal{
+  background-color: hsla(166, 100%, 37%, 0.108);
+color: hsla(166, 100%, 37%);
+}
+.visual{
+  background-color: hsla(234, 85%, 45%, 0.108);
+color: hsla(234, 85%, 45%);
+}
+
+/* BUTTON */
+.box2 a input{
+  border: none;
+  padding: 8px;
+  width: 100%;
+  border-radius: 20px;
+  font-size: 12px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(224, 30%, 27%);
+  margin: .3rem 0;
+}
+.attribution{
+  text-align: center;
+  font-size: 13px;
+}
+b{
+  color: hsl(224, 30%, 27%);
+}
+.light{
+  color:  rgba(48, 59, 90, 0.5);
+  font-weight: bold;
+  font-size: 9px;
+}
+@media(max-width: 375px){
+  .container{
+    flex-direction: column;
+  }
+  .box1{
+    border-radius: 0 0 20px 20px;
+  }
+  .box2{
+    width: 200px;
+    /* position: static; */
+    bottom: 10px;
+    left: 0px;
+    /* background-color: rgba(250, 235, 215, 0.315); */
+    box-shadow: none;
+    border-radius: 0;
+    padding: 10px;
+  }
+  .box2 h3{
+    padding-top: .8rem;
+  }
+}
