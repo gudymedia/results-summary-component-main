@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 @font-face {
   font-family: 'Hanken';
   src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format('truetype');
@@ -16,8 +19,9 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 95vh;
   /* width: 80%; */
-  margin: 7rem auto;
+  margin: 0 auto;
 }
 .box1{
   width: 200px;
