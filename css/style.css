@@ -144,7 +144,7 @@ b{
   font-weight: bold;
   font-size: 9px;
 }
-@media(max-width: 375px){
+@media(max-width: 576px){
   .container{
     flex-direction: column;
     margin:0;
@@ -192,7 +192,7 @@ b{
     padding: 12px 8px;
    }
   .box2 h3{
-    font-size: 35px;
+    font-size: 2.3rem;
     text-align: center;
   }
   .box2 h3{
